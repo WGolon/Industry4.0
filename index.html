@@ -1,0 +1,70 @@
+<!-- AWP_In_Variable Name='"webdata".name' -->
+<!-- AWP_In_Variable Name='"webdata".binary' -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400">
+    <title>Linia</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="main-text-box">
+                    <h1> Hello user <br>lets customize your product</h1>
+                    <p> The Corpse must be always selected, you can pick which bolts are going to be screwed by clicking on Corpse's small holes. Click on Overlay or Bushing image to pick them.</p>
+            </div>
+            </header>
+    
+            <section>
+                <div class="components">
+                    <div class="tile corpse">
+                            <h2>Corpse</h2>    
+                            <img src="cut/corpse.jpg">
+                            <div class="hole1"></div>
+                            <div class="hole2"></div>
+                            <div class="hole3"></div>
+                            <div class="hole4"></div>
+                            <p> 0 picked holes</p>
+                    </div>
+                    <div class="tile overlay">
+                            <h2>Overlay</h2> 
+                            <img src="cut/overlay.jpg">
+                            <p>not selected</p>
+                    </div>
+                    <div class="tile bushing">
+                            <h2>Bushing</h2> 
+                            <img src="cut/bushing.jpg">
+                            <p>not selected</p>
+                    </div>
+                    <div style="clear:both"></div>
+                    <div class="name_input">
+                            <p>Actual product number:</p>
+                            <form method="POST" onsubmit="onld()" class="form">
+                                <output class="out" value="asd" type="text"> 0 </output>
+                                <input  class="inpt" type="hidden" name='"webdata".binary' value="0" readonly>
+                                <input class="name" name='"webdata".name' type="text" placeholder="Enter your name" required>
+                                <input class="namecp" type="hidden">
+                                <input class="btn" type="submit" value="Customize">
+                            </form>
+                        </div>
+
+                        <div id="myModal" class="modal">
+                                <div class="modal-content">
+                                <span class="close">&times;</span>
+                        </div>
+      
+      </div>
+            </section>
+            <footer class="rectangle">
+                    2019 &copy; AGH WIMiR Industry 4.0
+            </footer>
+    </div>
+    <script src="script.js">
+    </script>
+</body>
+</html>

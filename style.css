@@ -1,0 +1,251 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-image: linear-gradient(rgb(0, 0, 0, 0.8), rgb(0, 0, 0, 0.8)), url(img/industryy.jpg);
+    font-family: 'Lato', 'Arial', sans-serif;
+    text-rendering: optimizeLegibility;
+    font-size: 20px;
+    font-weight: 300;
+    width: 100%;
+    background-color: #555;
+    color: #555;
+}
+
+header {
+    height: 300px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 150%;
+    color: rgb(207, 207, 207);
+    transform: translate(0%, 5vh);
+    letter-spacing: 2px;
+    padding-bottom: 20px;
+}
+.container {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1023px;
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 100vh;
+
+}
+.main-text-box  {
+    width: 500px;
+    margin: 0 auto;
+    font-size: 85%;
+    letter-spacing: 1px;
+    line-height: 25px;
+    color: #fff;
+    text-align: center;
+}
+.main-text-box p{
+    left: 0px;
+    top: 0px;
+    color: rgb(207, 207, 207);
+    position: relative;
+    padding: 4px;
+    transform: translate(0,9vh);
+    border: 4px solid rgb(206, 132, 21);
+    border-radius: 10px;
+    font-size: 90%;
+    font-weight: 300;
+}
+
+.components {
+    height: 500px;
+    width: 100%;
+    background-color: rgb(0, 0, 0, 0.2);
+}
+
+.tile{
+    margin-top: 10px;
+    width: 330px;
+    height: 310px;
+    float: left;
+    position: relative;
+}
+
+.tile img{
+    display: block;
+    margin: 0 auto;
+    width: 310px; 
+    z-index: -1;
+}
+
+
+.overlay{
+    margin-right: 16.5px;
+}
+.corpse{
+    margin-right: 16.5px;
+}
+.corpse img {
+    border: 7px solid rgb(0, 110, 0);
+    border-radius: 10px;
+}
+.overlay img,
+.bushing img {
+    border: 7px solid rgb(112, 37, 37);
+    border-radius: 10px;
+}
+
+.overlay img:hover,
+.bushing img:hover {
+    border: 7px solid rgb(255, 92, 92);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.overlay h2,
+.bushing h2{
+    font-size: 120%;
+    font-weight: 600;
+    color: red;
+    left: 25px;
+    top: 10px;
+    position: absolute;
+    z-index: 1;
+}
+
+.corpse h2{
+    font-size: 120%;
+    font-weight: 600;
+    color: rgb(0, 110, 0);
+    left: 25px;
+    top: 10px;
+    position: absolute;
+    z-index: 1;
+}
+.corpse p{
+    font-size: 100%;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    right: 25px;
+    top: 13px;
+    position: absolute;
+    z-index: 1;
+}
+
+.overlay p,
+.bushing p{
+    font-size: 100%;
+    font-weight: 600;
+    color: red;
+    right: 25px;
+    top: 13px;
+    position: absolute;
+    z-index: 1;
+}
+
+.hole1,
+.hole2, 
+.hole3, 
+.hole4 {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color:red;
+    z-index: 1;
+    opacity: 0.3;
+}
+.hole1{
+    left: 156px;
+    top: 73px;
+}
+.hole2{
+    left: 157px;
+    top: 215px;
+}
+.hole3{
+    left: 232px;
+    top: 143px;
+}
+.hole4{
+    left: 82px;
+    top: 143px;
+}
+
+.hole1:hover,
+.hole2:hover,
+.hole3:hover,
+.hole4:hover{
+    cursor: pointer;
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color:red;
+    z-index: 1;
+    opacity: 0.2;
+}
+.name_input p{
+    color: black;
+    display: block;
+    position: relative;
+    float: left;
+    top: 3px;
+    margin-right: 10px;
+}
+.name_input{
+    width: 600px;
+    padding: 34px 21px;
+    height: 100px;
+    background-color: #666666;
+    border-radius: 10px;
+    border: 3px solid rgb(56, 56, 56);
+    margin: 40px auto;
+}
+.name_input input{
+    margin-right: 5px;
+    display: block;
+    float: left;
+}
+.name_input .btn {
+    height: 30px;
+    width: 90px;
+    font-size: 70%;
+    font-weight: 600;
+    float: left;
+}
+.name_input .btn:hover {
+    cursor: pointer;
+}
+.name_input .name {
+    height: 30px;
+    text-align: center;
+    font-size: 70%
+}
+.out{
+    display: block;
+    color: black;
+    padding-top: 3px;
+    float: left;
+    height: 30px;
+    width: 40px;
+    background-color: #fff;
+    margin-right: 10px;
+    text-align: center;
+}
+.rectangle{
+    position: relative;
+    bottom: 20px;
+    width: 100%;
+    background-color: black;
+    padding: 15px 0px;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.inpt {
+    display: none;
+}
